@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/iancoleman/strcase"
-	"github.com/jinzhu/gorm"
+	"gorm.io/gorm"
 )
 
 const (
@@ -87,7 +87,10 @@ func (p *Paginator) initOptions() {
 }
 
 func (p *Paginator) initTableKeys(db *gorm.DB, out interface{}) {
-	table := db.NewScope(out).TableName()
+	// table := db.NewScope(out).TableName()
+	stmt := &gorm.Statement{DB: db}
+	stmt.Parse(out)
+	table := stmt.Schema.Table
 	for _, key := range p.keys {
 		p.tableKeys = append(p.tableKeys, fmt.Sprintf("%s.%s", table, strcase.ToSnake(key)))
 	}
