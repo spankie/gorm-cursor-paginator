@@ -5,7 +5,7 @@ gorm-cursor-paginator
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/6d8f88386eeb401b8804bb78f372b346)](https://app.codacy.com/app/pilagod/gorm-cursor-paginator?utm_source=github.com&utm_medium=referral&utm_content=pilagod/gorm-cursor-paginator&utm_campaign=Badge_Grade_Dashboard)
 =====================
 
-A paginator doing cursor-based pagination based on [GORM](https://github.com/jinzhu/gorm)
+A paginator doing cursor-based pagination based on [GORM V2](https://gorm.io/gorm)
 
 Installation
 ------------
