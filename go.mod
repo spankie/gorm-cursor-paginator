@@ -3,7 +3,7 @@ module github.com/spankie/gorm-cursor-paginator
 go 1.14
 
 require (
-	github.com/iancoleman/strcase v0.0.0-20180726023541-3605ed457bf7
+	github.com/iancoleman/strcase v0.1.3
 	github.com/lib/pq v1.9.0 // indirect
 	github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e // indirect
 	github.com/pkg/errors v0.9.1 // indirect
